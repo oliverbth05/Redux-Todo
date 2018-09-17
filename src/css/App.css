@@ -103,10 +103,12 @@ body {
 }
 
 .section-container {
-    
+  
 }
 
 .task-list {
+    overflow: auto;
+    max-height: 500px;
     margin-top: 15px;
 }
 
@@ -282,7 +284,7 @@ body {
     border: none;
     border-radius: 5px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
     background: rgb(66, 143, 244);
@@ -302,8 +304,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-height: 770px;
-    max-width: 770px;
     z-index: 10;
     border-radius: 5px;
     background: white;
@@ -318,4 +318,69 @@ body {
     width: 100%;
     top: 0;
     right: 0;
+}
+
+@media only screen and (max-width: 980px) {
+
+    .grid-2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-rows: 1fr;
+        grid-gap: 10px;
+        margin-top: 0;
+        width: 95%;
+    }
+    
+    .task-list {
+        max-height: 300px;
+    }
+    
+    .task {
+        height: 80px;
+        padding: 5px;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
+        font-size: 14px;
+    }
+    
+    .task-selected {
+        height: 80px;
+        padding: 5px;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
+        font-size: 14px;
+    }
+    
+    .button-sm {
+        display: none;
+    }
+    
+    .create {
+        max-width: 100%;
+        margin-top: 0;
+    }
+    
+    .lg {
+        font-size: 30px;
+    }
+    
+    .md {
+        font-size: 25px;
+    }
+    
+    .sm {
+        font-size: 18px;
+    }
+    
+    .task-section {
+        font-size: 14px;
+    }
+    
+    .task-section label {
+        font-size: 18px;
+    }
+    
+    
 }
