@@ -1,0 +1,321 @@
+body {
+    background: white;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    letter-spacing: 1.6px;
+}
+
+.heading{
+    padding: 15px;
+    border-bottom: 1.3px solid rgb(86, 153, 255);
+    text-align: center;
+    
+}
+
+
+
+.lg {
+    font-size: 42px;
+    background: -webkit-linear-gradient(right, rgb(0, 140, 255) , rgb(122, 210, 255) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.md {
+    font-size: 34px;
+  
+}
+
+.sm {
+    font-size: 25px;
+    color: rgb(81, 100, 119);
+}
+
+.button-menu {
+    height: 80px;
+    background: linear-gradient(right, rgb(0, 140, 255) , rgb(122, 210, 255) );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background: white;
+    border-radius: 4px;
+    letter-spacing: inherit;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.button:hover{
+    transform: translateY(-2.5px);
+}
+
+.button:active{
+    transform: translateY(-0px);
+}
+
+.button-lg{
+     height: 55px;
+     padding: 10px;
+     font-size: 14.8px;
+     min-width: 200px;
+     margin: 5px;
+     border: 1px solid rgb(86, 153, 255);
+}
+
+.button-sm{
+    height: 100%;
+    padding: 5px;
+    font-size: 12.8px;
+    min-width: 100px;
+    border: 1px solid rgb(86, 153, 255);
+    background: rgb(86, 153, 255);
+    color: white;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    background: white;
+}
+
+.grid-1{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    background: white;
+}
+
+.section-container {
+    
+}
+
+.task-list {
+    margin-top: 15px;
+}
+
+.task {
+    padding: 30px;
+    border: 1px solid rgb(86, 153, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100%;
+    margin-bottom: 15px;
+    transition: all .2s;
+}
+
+.task:hover {
+    transform: translateY(-5px);
+}
+
+.task-selected {
+    padding: 30px;
+    border: 3px solid rgb(86, 153, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100%;
+    margin-bottom: 15px;
+    transition: all .2s;
+}
+
+.task-title {
+    text-align: center;
+}
+
+.task-date{
+    text-align: center;
+    font-size: 14px;
+}
+
+.message {
+    font-size: 19px;
+    text-align: center;
+    padding: 40px;
+}
+
+.section-container {
+    
+}
+
+.create {
+    margin: auto;
+    max-width: 45%;
+    margin-top: 50px;
+}
+
+.create-form {
+    width: 80%;
+    margin: auto;
+}
+
+.create-form-group {
+    margin: 30px;
+}
+.create-form input {
+    height: 35px;
+    width: 100%;
+ 
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(192, 203, 216);
+    font-size: 20px;
+    padding: 3px;
+    transition: all .2s;
+}
+
+.create-form textarea {
+    height: 75px;
+    width: 100%;
+ 
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(192, 203, 216);
+    font-size: 20px;
+    padding: 3px;
+    transition: all .2s;
+}
+
+.create-form textarea:focus {
+    border: 2px solid rgb(114, 179, 255);
+}
+
+.create-form input:focus {
+    border: 2px solid rgb(114, 179, 255);
+}
+
+.create-form label {
+    font-size: 20px;
+
+}
+
+.create-form button {
+    height: 50px;
+    width: 100%;
+    background: rgb(84, 159, 247);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s;
+    box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.35);
+}
+
+.create-form button:hover {
+    transform: translateY(-4px);
+    box-shadow: 5px 5px 55px 3px rgba(0,0,0,0.28);
+}
+
+.create-form button:active {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.35);
+}
+
+.error {
+    border: 2px solid red !important;
+}
+
+.error-message {
+    color: red;
+    display: block;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.task-section {
+    margin-bottom: 30px;
+}
+
+.task-section label {
+     background: -webkit-linear-gradient(right, rgb(0, 140, 255) , rgb(122, 210, 255) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.task-section p {
+    text-align: center;
+}
+
+.task-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.task-buttons button {
+    width: 100%;
+    margin: 30px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgb(66, 143, 244);
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.38);
+    transform: translateY(0px);
+    transition: all .2s;
+}
+
+.task-buttons button:hover {
+    box-shadow: 4px 6px 35px 0px rgba(0,0,0,0.38);
+    transform: translateY(-2px);
+}
+
+.edit-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 770px;
+    max-width: 770px;
+    z-index: 10;
+    border-radius: 5px;
+    background: white;
+    
+    
+}
+
+.backdrop {
+    background: rgba(50, 50, 50, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
