@@ -89,7 +89,11 @@ class EditModal extends Component {
                     </div>
             
                     <div className = 'create-form-group'>
-                        <button onClick = {this.updateTask.bind(this)}>Update</button>
+                        <button onClick = {this.updateTask.bind(this)}><i class="fas fa-save"></i> Update</button>
+                    </div>
+                    
+                    <div className = 'create-form-group'>
+                        <button onClick = { () => {this.props.toggleEdit()}}><i class="far fa-times-circle"></i> Cancel</button>
                     </div>
                     
                     {this.state.titleError ?  <p className = 'error-message'>*Task requires a title field</p>: null}
@@ -110,7 +114,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        updateTask: (index, update) => { dispatch({type:'UPDATE_TASK', index: index, update: update})}
+        updateTask: (index, update) => { dispatch({type:'UPDATE_TASK', index: index, update: update})},
+        toggleEdit: () => { dispatch({type: 'TOGGLE_EDIT'})}
     }
 }
 

@@ -382,5 +382,15 @@ body {
         font-size: 18px;
     }
     
+    .button-lg {
+        min-width: 0;
+        font-size: 15px;
+        padding: 5px;
+        letter-spacing: 0;
+        
+    }
     
+    .edit-modal {
+      width: 80%;
+    }
 }

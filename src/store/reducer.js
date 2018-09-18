@@ -29,7 +29,7 @@ const reducer = (state = initialState, action) => {
             }
             
         case 'SELECT_TASK' :
-            console.log('SELECTED')
+            
             return {
                 ...state,
                 selected: state.tasks[action.index],
@@ -49,7 +49,7 @@ const reducer = (state = initialState, action) => {
             }
             
         case 'COMPLETE_TASK' :
-            console.log('COMPLETED')
+            
             var arr = [...state.tasks];
             arr.splice(action.index, 1);
             return {
