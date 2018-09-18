@@ -18,8 +18,6 @@ body {
     
 }
 
-
-
 .lg {
     font-size: 42px;
     background: -webkit-linear-gradient(right, rgb(0, 140, 255) , rgb(122, 210, 255) );
@@ -28,8 +26,7 @@ body {
 }
 
 .md {
-    font-size: 34px;
-  
+    font-size: 34px;  
 }
 
 .sm {
@@ -102,10 +99,6 @@ body {
     background: white;
 }
 
-.section-container {
-  
-}
-
 .task-list {
     overflow: auto;
     max-height: 500px;
@@ -155,10 +148,6 @@ body {
     padding: 40px;
 }
 
-.section-container {
-    
-}
-
 .create {
     margin: auto;
     max-width: 45%;
@@ -173,10 +162,10 @@ body {
 .create-form-group {
     margin: 30px;
 }
+
 .create-form input {
     height: 35px;
-    width: 100%;
- 
+    width: 100%; 
     border-radius: 5px;
     outline: none;
     border: 2px solid rgb(192, 203, 216);
@@ -188,7 +177,6 @@ body {
 .create-form textarea {
     height: 75px;
     width: 100%;
- 
     border-radius: 5px;
     outline: none;
     border: 2px solid rgb(192, 203, 216);
@@ -207,7 +195,6 @@ body {
 
 .create-form label {
     font-size: 20px;
-
 }
 
 .create-form button {
@@ -307,8 +294,6 @@ body {
     z-index: 10;
     border-radius: 5px;
     background: white;
-    
-    
 }
 
 .backdrop {
@@ -321,7 +306,6 @@ body {
 }
 
 @media only screen and (max-width: 980px) {
-
     .grid-2{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
